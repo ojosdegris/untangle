@@ -68,7 +68,7 @@ class Element():
                 self.__dict__[key] = matching_children
                 return matching_children
         else:
-            raise IndexError('Unknown key <%s>' % key)
+            return None
 
     def __iter__(self):
         yield self
